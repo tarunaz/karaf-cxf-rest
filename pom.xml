@@ -300,29 +300,7 @@
           </startupBundles>
         </configuration>
       </plugin>
-
-      <!-- 3. create docker image -->
-      <plugin>
-        <groupId>org.jboss.redhat-fuse</groupId>
-        <artifactId>fabric8-maven-plugin</artifactId>
-        <version>${fuse.version}</version>
-        <executions>
-          <execution>
-            <id>generate-resource</id>
-            <phase>generate-resources</phase>
-            <goals>
-              <goal>resource</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>build-image</id>
-            <phase>install</phase>
-            <goals>
-              <goal>build</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+         
     </plugins>
   </build>
 </project>
